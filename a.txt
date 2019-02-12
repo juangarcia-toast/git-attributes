@@ -5,7 +5,7 @@
 */
 
 /*
-	$Author: ubunut-420 $
+	$Author: asdf $
 	$Id: skinnyTemplate.sql 42285 2017-08-08 16:47:48Z juanmg $
 	$Rev: 42301 $
      $URL: svn://www.perfecttrax.com/eStratEx/trunk/crmsql/scripts/skinnyTemplate.sql $
