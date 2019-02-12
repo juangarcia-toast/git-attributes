@@ -8,8 +8,8 @@
 	$Author: juanm-mb $
 	$Id: skinnyTemplate.sql 42285 2017-08-08 16:47:48Z juanmg $
 	$Rev: 42286 $
-    $URL:  $: //www.perfecttrax.com/eStratEx/trunk/crmsql/scripts/skinnyTemplate.sql $
-	$Date: Tue Feb 12 18:07:54 EST 2019 $
+    $URL: test.sql $: //www.perfecttrax.com/eStratEx/trunk/crmsql/scripts/skinnyTemplate.sql $
+	$Date: Tue Feb 12 18:11:13 EST 2019 $
 */
 
 DELIMITER $$
@@ -47,7 +47,7 @@ BEGIN
 	END;
 
 
-	set _scriptName:  $:  svn: //www.perfecttrax.com/eStratEx/trunk/crmsql/scripts/skinnyTemplate.sql $';
+	set _scriptName: test.sql $:  svn: //www.perfecttrax.com/eStratEx/trunk/crmsql/scripts/skinnyTemplate.sql $';
 
 	if locate('/',_scriptName)>0 then
 		set _scriptName:=substring(_scriptName, 1+-1*locate('/' , reverse(_scriptName)));
