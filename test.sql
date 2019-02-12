@@ -8,8 +8,8 @@
 	$Author: juanm-mb $
 	$Id: skinnyTemplate.sql 42285 2017-08-08 16:47:48Z juanmg $
 	$Rev: 42286 $
-    $URL: test.sql $: //www.perfecttrax.com/eStratEx/trunk/crmsql/scripts/skinnyTemplate.sql $
-	$Date: Tue Feb 12 18:11:27 EST 2019 $
+  $URL: test.sql $: //www.perfecttrax.com/eStratEx/trunk/crmsql/scripts/skinnyTemplate.sql $
+	$Date: Tue Feb 12 18:13:34 EST 2019 $
 */
 
 DELIMITER $$
