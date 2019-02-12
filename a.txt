@@ -1,0 +1,15 @@
+/*
+	This Source Code is owned completely by Our Alter Ego Software (OAESoftware.com).
+	Any use of this source code is explicitly prohibited unless authorized specifically and in writing by OAE Software.
+	Copyright 2011-2016(c) OAE Software, LLC.
+*/
+
+/*
+	$Author: juanmg $
+	$Id: skinnyTemplate.sql 42285 2017-08-08 16:47:48Z juanmg $
+	$Rev: 42285 $
+     $URL: svn://www.perfecttrax.com/eStratEx/trunk/crmsql/scripts/skinnyTemplate.sql $
+	$LastChangedDate: 2017-08-08 12:47:48 -0400 (Tue, 08 Aug 2017) $
+*/
+
+test file
