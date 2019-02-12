@@ -1,0 +1,7 @@
+/*
+	$Author: juanm-mb $
+	$Id: skinnyTemplate.sql 42285 2017-08-08 16:47:48Z juanmg $
+	$Rev: 42303 $
+     $URL: svn://www.perfecttrax.com/eStratEx/trunk/crmsql/scripts/skinnyTemplate.sql $
+	$Date: Tue Feb 12 17:50:28 EST 2019 $
+*/
