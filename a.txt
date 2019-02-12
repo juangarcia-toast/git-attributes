@@ -5,11 +5,11 @@
 */
 
 /*
-	$Author: author:ubunut-420 $: ubunut-420 $
+	$Author: author $
 	$Id: skinnyTemplate.sql 42285 2017-08-08 16:47:48Z juanmg $
-	$Rev: 42295 $
+	$Rev: 42296 $
      $URL: svn://www.perfecttrax.com/eStratEx/trunk/crmsql/scripts/skinnyTemplate.sql $
-	$Date: Tue Feb 12 16:36:46 EST 2019 $
+	$Date: Tue Feb 12 16:38:15 EST 2019 $
 */
 
 test file
