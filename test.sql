@@ -7,13 +7,13 @@
 /*
 	$Author: juanm-mb $
 	$Id: skinnyTemplate.sql 42285 2017-08-08 16:47:48Z juanmg $
-	$Rev: 42287 $
+	$Rev: 42288 $
     $URL: test.sql $
-	$Date: Tue Feb 12 18:15:30 EST 2019 $
+	$Date: Tue Feb 12 18:37:57 EST 2019 $
 
 ---
 	$Author: juanm-mb $
-	$Date: Tue Feb 12 18:15:30 EST 2019 $
+	$Date: Tue Feb 12 18:37:57 EST 2019 $
     $URL: test.sql $
-    $Rev: 42287 $
+    $Rev: 42288 $
 */
