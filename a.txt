@@ -1,6 +1,8 @@
-# $Date$
+# $Date: Tue Feb 12 11:44:02 2019 -0500$
 1234
 5678
 after staged / added tweaks
 
 after staged 2
+
+third change
