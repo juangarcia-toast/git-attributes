@@ -6,10 +6,10 @@
 
 /*
 	$Author: juanm-mb $
-	$Id: skinnyTemplate.sql 42285 2017-08-08 16:47:48Z juanmg $
-	$Rev: f9ad32bd2145ca6b8593d514bea5e6e3eaef15f6 $
+	$Rev: 300.sql d6bddec45c9795a836e2e360d968a2c5d07d4438 Tue Feb 12 23:52:13 EST 2019 juanm-mb $
+	$Rev: d6bddec45c9795a836e2e360d968a2c5d07d4438 $
      $URL: 300.sql $
-	$Date: Tue Feb 12 23:48:30 EST 2019 $
+	$Date: Tue Feb 12 23:52:13 EST 2019 $
 */
 
 DELIMITER $$
@@ -59,7 +59,7 @@ BEGIN
 		set @upgradeMessage:=concat('This script already executed: ', _scriptName);
 	else
 		set @upgradeMessage:= _scriptName;
-		set _rev:='$Rev: f9ad32bd2145ca6b8593d514bea5e6e3eaef15f6 $';
+		set _rev:='$Rev: d6bddec45c9795a836e2e360d968a2c5d07d4438 $';
 		if instr(_rev,'$Rev: ')>0 then
 				set _rev:=trim(trailing '$' from substring(_rev,7));
 		end if;
@@ -71,7 +71,7 @@ BEGIN
 		sad
 		
 		-- End Script work.
-		call sp_updateschemaversion(1, 1798, 1798,'$Rev: f9ad32bd2145ca6b8593d514bea5e6e3eaef15f6 $ - $Date: Tue Feb 12 23:48:30 EST 2019 $', now());
+		call sp_updateschemaversion(1, 1798, 1798,'$Rev: d6bddec45c9795a836e2e360d968a2c5d07d4438 $ - $Date: Tue Feb 12 23:52:13 EST 2019 $', now());
 	end if;
 
 END $$
