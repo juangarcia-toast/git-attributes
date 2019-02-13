@@ -59,15 +59,16 @@ BEGIN
 		set @upgradeMessage:=concat('This script already executed: ', _scriptName);
 	else
 		set @upgradeMessage:= _scriptName;
-		-- set _rev:='$Rev: f9ad32bd2145ca6b8593d514bea5e6e3eaef15f6 $';
-		-- if instr(_rev,'$Rev: ')>0 then
-		-- 		set _rev:=trim(trailing '$' from substring(_rev,7));
-		-- end if;
- 		insert into st_upgradehistory (scriptName, runDate, author, runBy)
-		select _scriptName, now(), '$Author: juanm-mb $', '$Author: juanm-mb $';
+		set _rev:='$Rev: f9ad32bd2145ca6b8593d514bea5e6e3eaef15f6 $';
+		if instr(_rev,'$Rev: ')>0 then
+				set _rev:=trim(trailing '$' from substring(_rev,7));
+		end if;
+ 		insert into st_upgradehistory (scriptName, runDate, author, runBy, revision)
+		select _scriptName, now(), '$Author: juanm-mb $', '$Author: juanm-mb $', _rev;
 		-- Do The script Work here.
 
 		
+		sad
 		
 		-- End Script work.
 		call sp_updateschemaversion(1, 1798, 1798,'$Rev: f9ad32bd2145ca6b8593d514bea5e6e3eaef15f6 $ - $Date: Tue Feb 12 23:48:30 EST 2019 $', now());
