@@ -6,10 +6,10 @@
 
 /*
 	$Author: juanm-mb $
-	$Rev: 0a4c2b62526af046afb40564bb31e75f54f8a61e $
-	$Rev: 0a4c2b62526af046afb40564bb31e75f54f8a61e $
+	$Rev: 57563413f2d30607441aeb95fa687f4cf618c92f $
+	$Rev: 57563413f2d30607441aeb95fa687f4cf618c92f $
      $URL: 300.sql $
-	$Date: Wed Feb 13 00:26:00 EST 2019 $
+	$Date: Wed Feb 13 00:29:06 EST 2019 $
 */
 
 DELIMITER $$
@@ -59,7 +59,7 @@ BEGIN
 		set @upgradeMessage:=concat('This script already executed: ', _scriptName);
 	else
 		set @upgradeMessage:= _scriptName;
-		set _rev:='$Rev: 0a4c2b62526af046afb40564bb31e75f54f8a61e $';
+		set _rev:='$Rev: 57563413f2d30607441aeb95fa687f4cf618c92f $';
 		if instr(_rev,'$Rev: ')>0 then
 				set _rev:=trim(trailing '$' from substring(_rev,7));
 		end if;
@@ -67,11 +67,11 @@ BEGIN
 		select _scriptName, now(), '$Author: juanm-mb $', '$Author: juanm-mb $', _rev;
 		-- Do The script Work here.
 
-		-- aany c13f557145d43ea130d8b016ac281819c88f0963 asdf 1234
+		-- aany c13f557145d43ea130d8b016ac281819c88f0963 asdf 1234 1234
 		
 		 
 		-- End Script work.
-		call sp_updateschemaversion(1, 1798, 1798,'$Rev: 0a4c2b62526af046afb40564bb31e75f54f8a61e $ - $Date: Wed Feb 13 00:26:00 EST 2019 $', now());
+		call sp_updateschemaversion(1, 1798, 1798,'$Rev: 57563413f2d30607441aeb95fa687f4cf618c92f $ - $Date: Wed Feb 13 00:29:06 EST 2019 $', now());
 	end if;
 
 END $$
