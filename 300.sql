@@ -6,10 +6,10 @@
 
 /*
 	$Author: juanm-mb $
-	$Rev: 57563413f2d30607441aeb95fa687f4cf618c92f $
-	$Rev: 57563413f2d30607441aeb95fa687f4cf618c92f $
+	$Rev: 300.sql ca015c093f7771337cf94f8d8ed86e422dfdf966 Wed Feb 13 00:30:41 EST 2019 juanm-mb $
+	$Rev: ca015c093f7771337cf94f8d8ed86e422dfdf966 $
      $URL: 300.sql $
-	$Date: Wed Feb 13 00:29:06 EST 2019 $
+	$Date: Wed Feb 13 00:30:41 EST 2019 $
 */
 
 DELIMITER $$
@@ -59,19 +59,17 @@ BEGIN
 		set @upgradeMessage:=concat('This script already executed: ', _scriptName);
 	else
 		set @upgradeMessage:= _scriptName;
-		set _rev:='$Rev: 57563413f2d30607441aeb95fa687f4cf618c92f $';
-		if instr(_rev,'$Rev: ')>0 then
-				set _rev:=trim(trailing '$' from substring(_rev,7));
-		end if;
- 		insert into st_upgradehistory (scriptName, runDate, author, runBy, revision)
-		select _scriptName, now(), '$Author: juanm-mb $', '$Author: juanm-mb $', _rev;
+		-- set _rev:='$Rev: ca015c093f7771337cf94f8d8ed86e422dfdf966 $';
+		-- if instr(_rev,'$Rev: ')>0 then
+		-- 		set _rev:=trim(trailing '$' from substring(_rev,7));
+		-- end if;
+ 		insert into st_upgradehistory (scriptName, runDate, author, runBy)
+		select _scriptName, now(), '$Author: juanm-mb $', '$Author: juanm-mb $';
 		-- Do The script Work here.
-
-		-- aany c13f557145d43ea130d8b016ac281819c88f0963 asdf 1234 1234
 		
-		 
+		-- 
 		-- End Script work.
-		call sp_updateschemaversion(1, 1798, 1798,'$Rev: 57563413f2d30607441aeb95fa687f4cf618c92f $ - $Date: Wed Feb 13 00:29:06 EST 2019 $', now());
+		call sp_updateschemaversion(1, 1798, 1798,'$Rev: ca015c093f7771337cf94f8d8ed86e422dfdf966 $ - $Date: Wed Feb 13 00:30:41 EST 2019 $', now());
 	end if;
 
 END $$
