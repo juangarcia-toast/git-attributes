@@ -9,7 +9,7 @@
     ; asdfas asdf ; askdjfksdf ;24234
 
 ---
-	replaced $Author: 222 uanm-mb $ asdfjk outside of limits .;asldfaksldf alsjdf $Author: 333 23 $ asdf sdf
+	replaced replaced asdfjk outside of limits .;asldfaksldf alsjdf replaced asdf sdf
 	$Date: Tue Feb 12 18:37:57 EST 2019 $
     $URL: test.sql $
     $Rev: 42288 $
@@ -17,4 +17,4 @@
     colAuthor: asdf col sadfl sdfl kajsd colAuthor: asdlfsdcol
 */
 
-replaced - $Author: a2344 $
+replaced - replaced
