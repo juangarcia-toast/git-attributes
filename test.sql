@@ -12,7 +12,7 @@
 	$Date: Tue Feb 12 18:37:57 EST 2019 $
 
 ---
-	$Author: juanm-mb $:  jasdfsd uanm-mb $
+	$Author: juanm-mb $
 	$Date: Tue Feb 12 18:37:57 EST 2019 $
     $URL: test.sql $
     $Rev: 42288 $
