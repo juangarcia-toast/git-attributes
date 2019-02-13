@@ -5,11 +5,11 @@
 */
 
 /*
-	$Author: juanm-mb $
-	$Rev: 544be66aad37b9e2f62dbc51b34a179985c24bea $
-	$Rev: 544be66aad37b9e2f62dbc51b34a179985c24bea $
-     $URL: 300.sql $
-	$Date: Wed Feb 13 00:09:00 EST 2019 $
+	$Author: juanmg $
+	$Id: skinnyTemplate.sql 42285 2017-08-08 16:47:48Z juanmg $
+	$Rev: 42285 $
+     $URL: svn://www.perfecttrax.com/eStratEx/trunk/crmsql/scripts/skinnyTemplate.sql $
+	$Date: 2017-08-08 12:47:48 -0400 (Tue, 08 Aug 2017) $
 */
 
 DELIMITER $$
@@ -47,7 +47,7 @@ BEGIN
 	END;
 
 
-	set _scriptName:='$URL: 300.sql $';
+	set _scriptName:='$URL: svn://www.perfecttrax.com/eStratEx/trunk/crmsql/scripts/skinnyTemplate.sql $';
 
 	if locate('/',_scriptName)>0 then
 		set _scriptName:=substring(_scriptName, 1+-1*locate('/' , reverse(_scriptName)));
@@ -59,19 +59,16 @@ BEGIN
 		set @upgradeMessage:=concat('This script already executed: ', _scriptName);
 	else
 		set @upgradeMessage:= _scriptName;
-		set _rev:='$Rev: 544be66aad37b9e2f62dbc51b34a179985c24bea $';
-		if instr(_rev,'$Rev: ')>0 then
-				set _rev:=trim(trailing '$' from substring(_rev,7));
-		end if;
- 		insert into st_upgradehistory (scriptName, runDate, author, runBy, revision)
-		select _scriptName, now(), '$Author: juanm-mb $', '$Author: juanm-mb $', _rev;
+		-- set _rev:='$Rev: 42285 $';
+		-- if instr(_rev,'$Rev: ')>0 then
+		-- 		set _rev:=trim(trailing '$' from substring(_rev,7));
+		-- end if;
+ 		insert into st_upgradehistory (scriptName, runDate, author, runBy)
+		select _scriptName, now(), '$Author: juanmg $', '$Author: juanmg $';
 		-- Do The script Work here.
-
-		
-		-- testing 2
 		
 		-- End Script work.
-		call sp_updateschemaversion(1, 1798, 1798,'$Rev: 544be66aad37b9e2f62dbc51b34a179985c24bea $ - $Date: Wed Feb 13 00:09:00 EST 2019 $', now());
+		call sp_updateschemaversion(1, 1798, 1798,'$Rev: 42285 $ - $Date: 2017-08-08 12:47:48 -0400 (Tue, 08 Aug 2017) $', now());
 	end if;
 
 END $$
