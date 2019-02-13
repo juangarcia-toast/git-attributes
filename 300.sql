@@ -6,10 +6,10 @@
 
 /*
 	$Author: juanm-mb $
-	$Rev: 1a89548a373603d819cfe24dd59b122122390e22 $
-	$Rev: 1a89548a373603d819cfe24dd59b122122390e22 $
+	$Rev: 4afe2727ae80ba81661ee601faf3ed3bd05ea6cf $
+	$Rev: 4afe2727ae80ba81661ee601faf3ed3bd05ea6cf $
      $URL: 300.sql $
-	$Date: Wed Feb 13 08:03:13 EST 2019 $
+	$Date: Wed Feb 13 08:05:42 EST 2019 $
 */
 
 DELIMITER $$
@@ -59,7 +59,7 @@ BEGIN
 		set @upgradeMessage:=concat('This script already executed: ', _scriptName);
 	else
 		set @upgradeMessage:= _scriptName;
-		set _rev:='$Rev: 1a89548a373603d819cfe24dd59b122122390e22 $';
+		set _rev:='$Rev: 4afe2727ae80ba81661ee601faf3ed3bd05ea6cf $';
 		if instr(_rev,'$Rev: ')>0 then
 				set _rev:=trim(trailing '$' from substring(_rev,7));
 		end if;
@@ -72,7 +72,7 @@ BEGIN
 	
 		
 		-- End Script work.
-		call sp_updateschemaversion(1, 1798, 1798,'$Rev: 1a89548a373603d819cfe24dd59b122122390e22 $ - $Date: Wed Feb 13 08:03:13 EST 2019 $', now());
+		call sp_updateschemaversion(1, 1798, 1798,'$Rev: 4afe2727ae80ba81661ee601faf3ed3bd05ea6cf $ - $Date: Wed Feb 13 08:05:42 EST 2019 $', now());
 		end if;
 
 END $$
