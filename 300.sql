@@ -6,10 +6,10 @@
 
 /*
 	$Author: juanm-mb $
-	$Rev: 402e4be64a440c18865a8a933ced3b278b4920b1 $
-	$Rev: 402e4be64a440c18865a8a933ced3b278b4920b1 $
+	$Rev: 053ebfce1f0bed29fe30df05c7a5653ad32fb2d9 $
+	$Rev: 053ebfce1f0bed29fe30df05c7a5653ad32fb2d9 $
      $URL: 300.sql $
-	$Date: Wed Feb 13 00:23:13 EST 2019 $
+	$Date: Wed Feb 13 00:23:50 EST 2019 $
 */
 
 DELIMITER $$
@@ -59,7 +59,7 @@ BEGIN
 		set @upgradeMessage:=concat('This script already executed: ', _scriptName);
 	else
 		set @upgradeMessage:= _scriptName;
-		set _rev:='$Rev: 402e4be64a440c18865a8a933ced3b278b4920b1 $';
+		set _rev:='$Rev: 053ebfce1f0bed29fe30df05c7a5653ad32fb2d9 $';
 		if instr(_rev,'$Rev: ')>0 then
 				set _rev:=trim(trailing '$' from substring(_rev,7));
 		end if;
@@ -68,10 +68,10 @@ BEGIN
 		-- Do The script Work here.
 
 		
-		-- testing asdfsdasdf asdf asdf asdf 1235 234 asdf
+		-- testing asdfsdasdf asdf asdf asdf 1235 234 asdf 123
 		 
 		-- End Script work.
-		call sp_updateschemaversion(1, 1798, 1798,'$Rev: 402e4be64a440c18865a8a933ced3b278b4920b1 $ - $Date: Wed Feb 13 00:23:13 EST 2019 $', now());
+		call sp_updateschemaversion(1, 1798, 1798,'$Rev: 053ebfce1f0bed29fe30df05c7a5653ad32fb2d9 $ - $Date: Wed Feb 13 00:23:50 EST 2019 $', now());
 	end if;
 
 END $$
