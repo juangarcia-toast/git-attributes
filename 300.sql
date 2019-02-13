@@ -67,8 +67,7 @@ BEGIN
 		select _scriptName, now(), '$Author: juanm-mb $', '$Author: juanm-mb $', _rev;
 		-- Do The script Work here.
 		
-		
-
+	
 	
 		
 		-- End Script work.
