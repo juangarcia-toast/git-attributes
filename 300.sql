@@ -66,9 +66,9 @@ BEGIN
  		insert into st_upgradehistory (scriptName, runDate, author, runBy, revision)
 		select _scriptName, now(), '$Author: juanm-mb $', '$Author: juanm-mb $', _rev;
 		-- Do The script Work here.
-		
-	
-		
+
+--  Wed Feb 13 08:06:53 EST 2019
+
 		-- End Script work.
 		call sp_updateschemaversion(1, 1798, 1798,'$Rev: 5ab33f7c9266d9e387b303226b0670fbbcfc58c3 $ - $Date: Wed Feb 13 08:06:53 EST 2019 $', now());
 		end if;
