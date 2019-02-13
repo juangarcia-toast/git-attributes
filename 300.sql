@@ -68,7 +68,6 @@ BEGIN
 		-- Do The script Work here.
 		
 	
-	
 		
 		-- End Script work.
 		call sp_updateschemaversion(1, 1798, 1798,'$Rev: 2e4ce8bd802e5ba3594f915a801e6dd8d2a2b3fe $ - $Date: Wed Feb 13 08:06:06 EST 2019 $', now());
