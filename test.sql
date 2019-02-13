@@ -3,14 +3,14 @@
 	$Author: juanm-mb $ jljlk
 	$Rev: 42288 $
     $URL: test.sql$
-	$Date: Tue Feb 12 23:15:13 EST 2019 $
+	$Date: Tue Feb 12 23:15:55 EST 2019 $
     $Author: juanm-mb $   ---- asfd $AUthor: $
-    $Author$
+    $Author: juanm-mb $
     ; asdfas asdf ; askdjfksdf ;24234
 
 ---
 	$Author: juanm-mb $ $Author: juanm-mb $ asdfjk outside of limits .;asldfaksldf alsjdf $Author: juanm-mb $ asdf sdf
-	$Date: Tue Feb 12 23:15:13 EST 2019 $
+	$Date: Tue Feb 12 23:15:55 EST 2019 $
     $URL: test.sql$
     $Rev: 42288 $
     >Author: asdf > sadfl sdfl kajsd >Author: asdlfsd>
