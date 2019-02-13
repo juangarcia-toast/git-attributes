@@ -59,15 +59,16 @@ BEGIN
 		set @upgradeMessage:=concat('This script already executed: ', _scriptName);
 	else
 		set @upgradeMessage:= _scriptName;
-		-- set _rev:='$Rev: 1a89548a373603d819cfe24dd59b122122390e22 $';
-		-- if instr(_rev,'$Rev: ')>0 then
-		-- 		set _rev:=trim(trailing '$' from substring(_rev,7));
-		-- end if;
- 		insert into st_upgradehistory (scriptName, runDate, author, runBy)
-		select _scriptName, now(), '$Author: juanm-mb $', '$Author: juanm-mb $';
+		set _rev:='$Rev: 1a89548a373603d819cfe24dd59b122122390e22 $';
+		if instr(_rev,'$Rev: ')>0 then
+				set _rev:=trim(trailing '$' from substring(_rev,7));
+		end if;
+ 		insert into st_upgradehistory (scriptName, runDate, author, runBy, revision)
+		select _scriptName, now(), '$Author: juanm-mb $', '$Author: juanm-mb $', _rev;
 		-- Do The script Work here.
 		
 		
+
 	
 		
 		-- End Script work.
