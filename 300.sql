@@ -68,7 +68,7 @@ BEGIN
 		-- Do The script Work here.
 
 		
-		-- testing asdfsdasdf asdf asdf asdf 1235
+		-- testing asdfsdasdf asdf asdf asdf 1235 234
 		 
 		-- End Script work.
 		call sp_updateschemaversion(1, 1798, 1798,'$Rev: 09d656266b9e12364b8c28555f9029449ce300c8 $ - $Date: Wed Feb 13 00:19:12 EST 2019 $', now());
