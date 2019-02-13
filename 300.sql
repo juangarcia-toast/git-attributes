@@ -67,7 +67,7 @@ BEGIN
 		select _scriptName, now(), '$Author: juanm-mb $', '$Author: juanm-mb $', _rev;
 		-- Do The script Work here.
 
-		-- aany c13f557145d43ea130d8b016ac281819c88f0963
+		-- aany c13f557145d43ea130d8b016ac281819c88f0963 asdf
 		
 		 
 		-- End Script work.
