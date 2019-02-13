@@ -67,7 +67,8 @@ BEGIN
 		select _scriptName, now(), '$Author: juanm-mb $', '$Author: juanm-mb $';
 		-- Do The script Work here.
 		
-		--  asdf
+		
+		
 		-- End Script work.
 		call sp_updateschemaversion(1, 1798, 1798,'$Rev: ec3b56520d67282abc20c6b3da372a45065909f4 $ - $Date: Wed Feb 13 00:32:33 EST 2019 $', now());
 	end if;
