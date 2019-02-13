@@ -5,7 +5,7 @@
     $URL: test.sql$
 	$Date: Tue Feb 12 23:15:55 EST 2019 $
     $Author: juanm-mb $   ---- asfd $AUthor: $
-    $Author: juanm-mb $
+    $Author$
     ; asdfas asdf ; askdjfksdf ;24234
 
 ---
