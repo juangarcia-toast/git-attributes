@@ -5,14 +5,14 @@
 */
 
 /*
-	$Author: juanm-mb $
+ asfsadfs fadjlf lsjdfj lkajsdflk jaskldfj-mb $: juanm-mb $
 	$Id: skinnyTemplate.sql 42285 2017-08-08 16:47:48Z juanmg $
 	$Rev: 42288 $
     $URL: test.sql $
 	$Date: Tue Feb 12 18:37:57 EST 2019 $
 
 ---
-	$Author: juanm-mb $
+ jasdfsd uanm-mb $ $Author: juanm-mb $
 	$Date: Tue Feb 12 18:37:57 EST 2019 $
     $URL: test.sql $
     $Rev: 42288 $
