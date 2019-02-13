@@ -7,15 +7,15 @@
 /*
 	$Author: juanm-mb $
 	$Id: skinnyTemplate.sql 42285 2017-08-08 16:47:48Z juanmg $
-	$Rev: 42289 $
+	$Rev: 42288 $
     $URL: test.sql $
-	$Date: Tue Feb 12 18:38:34 EST 2019 $
+	$Date: Tue Feb 12 18:37:57 EST 2019 $
 
 ---
-	$Author: juanm-mb $
-	$Date: Tue Feb 12 18:38:34 EST 2019 $
+	$Author: juanm-mb $:  jasdfsd uanm-mb $
+	$Date: Tue Feb 12 18:37:57 EST 2019 $
     $URL: test.sql $
-    $Rev: 42289 $
+    $Rev: 42288 $
 */
 
-set _scriptName: test.sql $:  svn: //www.perfecttrax.com/eStratEx/trunk/crmsql/scripts/skinnyTemplate.sql $';
+set _scriptName:='$URL: svn://www.perfecttrax.com/eStratEx/trunk/crmsql/scripts/skinnyTemplate.sql $';
