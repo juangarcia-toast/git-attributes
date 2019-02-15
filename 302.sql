@@ -5,11 +5,11 @@
 */
 
 /*
-	$Author: juanmg $
-	$Id: skinnyTemplate.sql 42285 2017-08-08 16:47:48Z juanmg $
-	$Rev: 42285 $
-  	$URL: svn://www.perfecttrax.com/eStratEx/trunk/crmsql/scripts/skinnyTemplate.sql $
-	$Date: 2017-08-08 12:47:48 -0400 (Tue, 08 Aug 2017) $
+	$Author: juanm-mb $
+	$Id: 302.sql 759864fe33c50d5b6221dc8a204449af2d69366f Fri Feb 15 13:00:30 EST 2019 juanm-mb $
+	$Rev: 759864fe33c50d5b6221dc8a204449af2d69366f $
+  	$URL: 302.sql $
+	$Date: Fri Feb 15 13:00:30 EST 2019 $
 */
 
 DELIMITER $$
@@ -47,7 +47,7 @@ BEGIN
 	END;
 
 
-	set _scriptName:='$URL: svn://www.perfecttrax.com/eStratEx/trunk/crmsql/scripts/skinnyTemplate.sql $';
+	set _scriptName:='$URL: 302.sql $';
 
 	if locate('/',_scriptName)>0 then
 		set _scriptName:=substring(_scriptName, 1+-1*locate('/' , reverse(_scriptName)));
@@ -59,16 +59,16 @@ BEGIN
 		set @upgradeMessage:=concat('This script already executed: ', _scriptName);
 	else
 		set @upgradeMessage:= _scriptName;
-		set _rev:='$Rev: 42285 $';
+		set _rev:='$Rev: 759864fe33c50d5b6221dc8a204449af2d69366f $';
 		if instr(_rev,'$Rev: ')>0 then
 				set _rev:=trim(trailing '$' from substring(_rev,7));
 		end if;
  		insert into st_upgradehistory (scriptName, runDate, author, runBy,revision)
-		select _scriptName, now(), '$Author: juanmg $', '$Author: juanmg $',_rev;
+		select _scriptName, now(), '$Author: juanm-mb $', '$Author: juanm-mb $',_rev;
 		-- Do The script Work here.
 		
 		-- End Script work.
-		call sp_updateschemaversion(1, 1798, 1798,'$Rev: 42285 $ - $Date: 2017-08-08 12:47:48 -0400 (Tue, 08 Aug 2017) $', now());
+		call sp_updateschemaversion(1, 1798, 1798,'$Rev: 759864fe33c50d5b6221dc8a204449af2d69366f $ - $Date: Fri Feb 15 13:00:30 EST 2019 $', now());
 	end if;
 
 END $$
