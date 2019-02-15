@@ -5,11 +5,11 @@
 */
 
 /*
-	$Author: juanmg $
-	$Id: SkinnyTemplate.sql 50221 2018-02-23 16:57:47Z juanmg $
-	$Rev: 50221 $
-	$URL: svn://www.perfecttrax.com/eStratEx/trunk/crmsql/procs/SkinnyTemplate.sql $
-	$Date: 2018-02-23 11:57:47 -0500 (Fri, 23 Feb 2018) $
+	$Author: juanm-mb $
+	$Id: proc-template.sql 1c1457cfb55694ae175661abefa245211b54021f Fri Feb 15 13:02:23 EST 2019 juanm-mb $
+	$Rev: 1c1457cfb55694ae175661abefa245211b54021f $
+	$URL: proc-template.sql $
+	$Date: Fri Feb 15 13:02:23 EST 2019 $
 */
 
 
@@ -19,7 +19,7 @@ drop procedure if exists SkinnyTemplate $$
 create procedure SkinnyTemplate(in _userId int, in _customerId int, in _viewcustomerId int, in _ipAddress varchar(255)) deterministic
 main: begin
 	/* declare variables */
-	declare _revision varchar(255) default '$Rev: 50221 $';
+	declare _revision varchar(255) default '$Rev: 1c1457cfb55694ae175661abefa245211b54021f $';
 	declare _roleID int default 0;
 	declare _myEmployeeID int default 0;
 
