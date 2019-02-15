@@ -64,8 +64,9 @@ BEGIN
 				set _rev:=trim(trailing '$' from substring(_rev,7));
 		end if;
  		insert into st_upgradehistory (scriptName, runDate, author, runBy,revision)
-		select _scriptName, now(), '$Author: juanm-mb $', '$Author: juanm-mb $',_rev;
+		select _scriptName, now(), '$Author$',_rev;
 		-- Do The script Work here.
+
 		
 		-- End Script work.
 		call sp_updateschemaversion(1, 1798, 1798,'$Rev: 759864fe33c50d5b6221dc8a204449af2d69366f $ - $Date: Fri Feb 15 13:00:30 EST 2019 $', now());
